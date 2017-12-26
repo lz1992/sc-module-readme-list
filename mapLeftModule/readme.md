@@ -7,12 +7,25 @@ mapLeftModule 模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |key|string|唯一标识|
-|[name](#mapSetting)|Object|地图配置对象|
-|[icon](#pointInfoSetting)|Object|图元报图配置对象|
-|[iconType](#pointInfoSetting)|Object|图元报图配置对象|
-|[iconStyle](#pointInfoSetting)|Object|图元报图配置对象|
-|[open](#pointInfoSetting)|Object|图元报图配置对象|
-|[children](#pointInfoSetting)|Object|图元报图配置对象|
+|name|string|菜单名称|
+|icon|string|菜单小图片的路径|
+|iconType|string|小图片类型|
+|iconStyle|Object|小图片的样式 遵循jsx的style对象|
+|open|bool|是否展开菜单|
+|[children[]](#children)|Array Object|子菜单集合|
+
+
+###<span id="children">children</span> 对象说明 
+
+| 参数 | 类型 | 说明 |
+|---|---|---|
+|key|string|唯一标识|
+|name|string|菜单名称|
+|icon|string|菜单小图片的路径|
+|iconType|string|小图片类型|
+|iconStyle|Object|小图片的样式 遵循jsx的style对象|
+|checked|bool|菜单是否选中|
+
 
 #### 代码片段：
 ```
