@@ -12,11 +12,11 @@ mapRightSetting.jon说明
 |iconType|string|Tap页签图标类型（目前仅img，暂不支持其他）|
 |height|string|高度|
 |sourcePath|string|右侧面板的数据源key 与config/urlHelper.js中的配置对应|
-|[defalutPathParams](#defalutPathParams)|Object|绑定到接口上的参数配置|
+|[defalutPathParams](#dpp)|Object|绑定到接口上的参数配置|
 |[panelSearchSetting](#panelSearchSetting)|Object|搜索栏配置|
 |[panelBodySetting](#panelBodySetting)|Object|列表内容配置|
 
-### <span id="defalutPathParams">defalutPathParams</span>
+### <span id="dpp">defalutPathParams</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |任意key|string或Array|当值为 **string**类型时：<br/>例1 "sttps":"PP"， 其key为sttps，值为PP。<br/> 例2 "depid":"@gldw"，其key为depid,值为在**搜索条件**中key为gldw的值。<br /> <br />当值为**Array**类型时表示获取的参数是时间类型的值：<br/>其获取时间参数的格式为<br/>`[{"value":"@btime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"},{"value":"@etime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"}]`<br/> 带 @ 值参数同 **string例2**中的一致  |
