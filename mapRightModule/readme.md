@@ -16,13 +16,12 @@ mapRightSetting.jon说明
 |[panelSearchSetting](#panelsearchsetting)|Object|搜索栏配置|
 |[panelBodySetting](#panelbodysetting)|Object|列表内容配置|
 
-### 1、 <span id="defalutpathparams">defalutPathParams</span>
+### <span id="defalutpathparams">defalutPathParams</span>
 
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |任意key|string或Array|当值为 **string**类型时：<br/>例1 "sttps":"PP"， 其key为sttps，值为PP。<br/> 例2 "depid":"@gldw"，其key为depid,值为在**搜索条件**中key为gldw的值。<br /> <br />当值为**Array**类型时表示获取的参数是时间类型的值：<br/>其获取时间参数的格式为<br/>`[{"value":"@btime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"},{"value":"@etime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"}]`<br/> 带 @ 值参数同 **string例2**中的一致  |
-
-### 2、 <span id="panelsearchsetting">panelSearchSetting</span>
+### <span id="panelsearchsetting">panelSearchSetting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
@@ -48,7 +47,7 @@ mapRightSetting.jon说明
         }
 ```
 
-#### 2.1、<span id="panelsearchsetting-setting">setting</span>
+#### <span id="panelsearchsetting-setting">setting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|控件前缀的名称|
@@ -149,7 +148,7 @@ mapRightSetting.jon说明
 ```
 
 
-### 3、 <span id="panelbodysetting">panelBodySetting</span>
+###  <span id="panelbodysetting">panelBodySetting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
@@ -158,7 +157,7 @@ mapRightSetting.jon说明
 |[setting[]](#panelbodysetting-setting)|Array[Object] |列表配置|
 
 
-#### 3.1、<span id="panelbodysetting-setting">setting</span>
+#### <span id="panelbodysetting-setting">setting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
