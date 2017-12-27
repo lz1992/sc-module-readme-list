@@ -16,7 +16,7 @@ mapRightSetting.jon说明
 |[panelSearchSetting](#panelSearchSetting)|Object|搜索栏配置|
 |[panelBodySetting](#panelBodySetting)|Object|列表内容配置|
 
-### 1、 <span id="defalutPathParams">defalutPathParams</span>
+### <span id="defalutPathParams">defalutPathParams</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |任意key|string或Array|当值为 **string**类型时：<br/>例1 "sttps":"PP"， 其key为sttps，值为PP。<br/> 例2 "depid":"@gldw"，其key为depid,值为在**搜索条件**中key为gldw的值。<br /> <br />当值为**Array**类型时表示获取的参数是时间类型的值：<br/>其获取时间参数的格式为<br/>`[{"value":"@btime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"},{"value":"@etime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"}]`<br/> 带 @ 值参数同 **string例2**中的一致  |
