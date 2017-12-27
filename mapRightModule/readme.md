@@ -25,7 +25,7 @@ mapRightSetting.jon说明
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
-|[setting[]](#panelsearchsetting-setting)|Array[Object] |搜索条件配置|
+|[setting[]](#setting-1)|Array[Object] |搜索条件配置|
 
 #### 代码片段：
 ```
@@ -47,7 +47,7 @@ mapRightSetting.jon说明
         }
 ```
 
-#### <span id="panelsearchsetting-setting">setting</span>
+#### <span id="setting-1">setting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|控件前缀的名称|
@@ -154,10 +154,10 @@ mapRightSetting.jon说明
 |title|string|标题|
 |row_key|string|数据的唯一标识列，|
 |width|string|表格宽度|
-|[setting[]](#panelbodysetting-setting)|Array[Object] |列表配置|
+|[setting[]](#setting-2)|Array[Object] |列表配置|
 
 
-#### <span id="panelbodysetting-setting">setting</span>
+#### <span id="setting-2">setting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
