@@ -13,20 +13,20 @@ mapRightSetting.jon说明
 |height|string|高度|
 |sourcePath|string|右侧面板的数据源key 与config/urlHelper.js中的配置对应|
 |[defalutPathParams](#defalutpathparams)|Object|绑定到接口上的参数配置|
-|[panelSearchSetting](#panelSearchSetting)|Object|搜索栏配置|
-|[panelBodySetting](#panelBodySetting)|Object|列表内容配置|
+|[panelSearchSetting](#panelsearchsetting)|Object|搜索栏配置|
+|[panelBodySetting](#panelbodysetting)|Object|列表内容配置|
 
-### <span id="defalutpathparams">defalutPathParams</span>
+### 1、 <span id="defalutpathparams">defalutPathParams</span>
 
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |任意key|string或Array|当值为 **string**类型时：<br/>例1 "sttps":"PP"， 其key为sttps，值为PP。<br/> 例2 "depid":"@gldw"，其key为depid,值为在**搜索条件**中key为gldw的值。<br /> <br />当值为**Array**类型时表示获取的参数是时间类型的值：<br/>其获取时间参数的格式为<br/>`[{"value":"@btime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"},{"value":"@etime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"}]`<br/> 带 @ 值参数同 **string例2**中的一致  |
 
-### 2、 <span id="panelSearchSetting">panelSearchSetting</span>
+### 2、 <span id="panelsearchsetting">panelSearchSetting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
-|[setting[]](#panelSearchSetting-setting)|Array[Object] |搜索条件配置|
+|[setting[]](#panelsearchsetting-setting)|Array[Object] |搜索条件配置|
 
 #### 代码片段：
 ```
@@ -48,7 +48,7 @@ mapRightSetting.jon说明
         }
 ```
 
-#### 2.1、<span id="panelSearchSetting-setting">setting</span>
+#### 2.1、<span id="panelsearchsetting-setting">setting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|控件前缀的名称|
@@ -149,16 +149,16 @@ mapRightSetting.jon说明
 ```
 
 
-### 3、 <span id="panelBodySetting">panelBodySetting</span>
+### 3、 <span id="panelbodysetting">panelBodySetting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
 |row_key|string|数据的唯一标识列，|
 |width|string|表格宽度|
-|[setting[]](#panelBodySetting-setting)|Array[Object] |列表配置|
+|[setting[]](#panelbodysetting-setting)|Array[Object] |列表配置|
 
 
-#### 3.1、<span id="panelBodySetting-setting">setting</span>
+#### 3.1、<span id="panelbodysetting-setting">setting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
