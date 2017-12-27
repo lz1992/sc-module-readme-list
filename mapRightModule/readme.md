@@ -12,11 +12,11 @@ mapRightSetting.jon说明
 |iconType|string|Tap页签图标类型（目前仅img，暂不支持其他）|
 |height|string|高度|
 |sourcePath|string|右侧面板的数据源key 与config/urlHelper.js中的配置对应|
-|[defalutPathParams](#defalutPathParams)|Object|绑定到接口上的参数配置|
+|[defalutPathParams](#defalutpathparams)|Object|绑定到接口上的参数配置|
 |[panelSearchSetting](#panelSearchSetting)|Object|搜索栏配置|
 |[panelBodySetting](#panelBodySetting)|Object|列表内容配置|
 
-### <span id="defalutPathParams">defalutPathParams</span>
+### <span id="defalutpathparams">defalutPathParams</span>
 
 | 参数 | 类型 | 说明 |
 |---|---|---|
