@@ -21,11 +21,12 @@ mapRightSetting.jon说明
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |任意key|string或Array|当值为 **string**类型时：<br/>例1 "sttps":"PP"， 其key为sttps，值为PP。<br/> 例2 "depid":"@gldw"，其key为depid,值为在**搜索条件**中key为gldw的值。<br /> <br />当值为**Array**类型时表示获取的参数是时间类型的值：<br/>其获取时间参数的格式为<br/>`[{"value":"@btime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"},{"value":"@etime","index":-1,"format":"YYYY-MM-DDTHH:mm:ss"}]`<br/> 带 @ 值参数同 **string例2**中的一致  |
+
 ### <span id="panelsearchsetting">panelSearchSetting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
-|[setting[]](#setting-1)|Array[Object] |搜索条件配置|
+|[setting[]](#psssetting)|Array[Object] |搜索条件配置|
 
 #### 代码片段：
 ```
@@ -47,7 +48,7 @@ mapRightSetting.jon说明
         }
 ```
 
-#### <span id="setting-1">setting</span>
+#### <span id="psssetting">setting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|控件前缀的名称|
@@ -154,10 +155,10 @@ mapRightSetting.jon说明
 |title|string|标题|
 |row_key|string|数据的唯一标识列，|
 |width|string|表格宽度|
-|[setting[]](#setting-2)|Array[Object] |列表配置|
+|[setting[]](#pbssetting)|Array[Object] |列表配置|
 
 
-#### <span id="setting-2">setting</span>
+#### <span id="pbssetting">setting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题|
