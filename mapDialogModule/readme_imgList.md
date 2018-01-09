@@ -21,7 +21,7 @@ mapDialogModule模块
 ### <span id="imgListSetting">imgListSetting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
-|<span id="dataSource">dataSource</span>|string|数据源,其值有2个分支，<br/>1、openOptions:<br/>表示初始化弹框的参数，template中的模版字符串key会从数据源配置中获取，<br/>例：@{stnm}的值为openOptions.pointData[stnm]<br/>serverData:<br/>表示dataSourcePath接口返回的数据集，返回结果直接挂在serverData下（）。**数据源结果必须为数组**|
+|<a name="dataSource">dataSource</a>|string|数据源,其值有2个分支，<br/>1、openOptions:<br/>表示初始化弹框的参数，template中的模版字符串key会从数据源配置中获取，<br/>例：@{stnm}的值为openOptions.pointData[stnm]<br/>serverData:<br/>表示dataSourcePath接口返回的数据集，返回结果直接挂在serverData下（）。**数据源结果必须为数组**|
 |timeStatus|boolean|是否显隐日期搜索框，无该参数表示隐藏日期搜索框|
 |[time](#time)|object|时间轴配置|
 |[img](#img)|object|图片容器配置|
@@ -31,7 +31,7 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题，可不填|
-|key|string|数据源，来自于[dataSource](#datasource)|
+|key|string|数据源，来自于<a href="#dataSource">dataSource</a>|
 |style|object|jsx的样式对象|
 
 #### <span id="time">time</span>
