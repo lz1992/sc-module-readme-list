@@ -55,7 +55,7 @@ mapDialogModule模块
 |key|string|数据源，来自于[dataSource](#dataSource)|
 |format|string|日期的格式化，若值存在表示key对应的值为日期字符串，否则为空或无该参数即可|
 
-###完整配置示例代码
+### 完整配置示例代码
 ```
 {
     "dataSourcePath": "lzjcDialogData",
@@ -114,7 +114,7 @@ mapDialogModule模块
 }
 ```
 
-###完整接口数据结构
+### 完整接口数据结构
 ```
 {
     "data": [{

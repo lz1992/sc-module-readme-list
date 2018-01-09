@@ -42,7 +42,7 @@ mapDialogModule模块
 |template|string|模版字符串`${name}${val}`，`${name}`对应取前面name的值，`${val}`为key转换后的值，可以添加其他任意字符串，|
 |style|Object|jsx的样式|
 
-###完整配置代码
+### 完整配置代码
 ```
 {
     "dataSourcePath": "kzDialogData",
@@ -773,7 +773,7 @@ mapDialogModule模块
 ```
 
 
-###完整接口数据结构
+### 完整接口数据结构
 ```
 {
     "data": {

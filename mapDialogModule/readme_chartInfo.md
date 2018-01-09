@@ -64,7 +64,7 @@ mapDialogModule模块
 |name|string|x轴的绑定字段值，和key保持一致即可|
 |key|string|表示x轴值的数据来源，即数据来源来至dataSource，<br/>例：dataSource为serverData.data.list时，x轴值serverData.data.list[x][key],list必须为数组，[x]自增序号表示无需理会，|
 
-####chartSetting部分配置示例
+#### chartSetting部分配置示例
 ```
  "chartSetting":{
         "dataSource":"serverData.data.list",
@@ -90,7 +90,7 @@ mapDialogModule模块
     }
 ```
 
-###<span id="infoSetting">infoSetting</span>
+### <span id="infoSetting">infoSetting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|左侧数据源的中文字符|
@@ -100,7 +100,7 @@ mapDialogModule模块
 |type|string|类型，有3种,<br/> 1、text<br/>无任何转换，字节取值后赋值<br/> 2、date<br/>日期类型<br/> 3、fixed<br/>数值保留类型|
 |fmt|string|当type为date：其值为格式化类型(YYYY年MM月DD天等)<br/>当type为fixed时：其值为保留位数|
 
-####infoSetting部分配置示例
+#### infoSetting部分配置示例
 ```
 "infoSetting": [
         {
@@ -120,7 +120,7 @@ mapDialogModule模块
     ]
 ```
 
-####完整配置示例
+#### 完整配置示例
 ```
 {
     "dataSourcePath": "waterDialogData",
@@ -178,7 +178,7 @@ mapDialogModule模块
 ```
 
 
-###完整接口数据结构
+### 完整接口数据结构
 ```
 {
     "data": {
