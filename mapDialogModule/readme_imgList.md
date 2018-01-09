@@ -6,11 +6,11 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |dataSourcePath|string|数据源|
-|[pathParams](#pathParams)|Object|数据源参数|
+|[pathParams](#pathparams)|Object|数据源参数|
 |width|number|弹框宽度|
 |height|number|弹框高度|
 |type|string|报图类型存在5种,每种对应一个模版的配置文件，当前示例模版为type="imgList"|
-|[imgListSetting](#imgListSetting)|Object|面板配置|
+|[imgListSetting](#imglistsetting)|Object|面板配置|
 
 ### <span id="pathParams">pathParams</span>
 | 参数 | 类型 | 说明 |
@@ -31,14 +31,14 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题，可不填|
-|key|string|数据源，来自于[dataSource](#dataSource)|
+|key|string|数据源，来自于[dataSource](#datasource)|
 |style|object|jsx的样式对象|
 
 #### <span id="time">time</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题，可不填|
-|key|string|数据源，来自于[dataSource](#dataSource)，结构构成必须为xxx.xx,xxx为数组，xx为数组中对象的key值|
+|key|string|数据源，来自于[dataSource](#datasource)，结构构成必须为xxx.xx,xxx为数组，xx为数组中对象的key值|
 |style|object|jsx的样式对象|
 
 
@@ -52,7 +52,7 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|中文名称|
-|key|string|数据源，来自于[dataSource](#dataSource)|
+|key|string|数据源，来自于[dataSource](#datasource)|
 |format|string|日期的格式化，若值存在表示key对应的值为日期字符串，否则为空或无该参数即可|
 
 ### 完整配置示例代码

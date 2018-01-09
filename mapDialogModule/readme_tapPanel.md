@@ -6,10 +6,10 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |dataSourcePath|string|数据源|
-|[pathParams](#pathParams)|Object|数据源参数|
+|[pathParams](#pathparams)|Object|数据源参数|
 |width|number|弹框宽度|
 |type|string|报图类型存在5种,每种对应一个模版的配置文件，当前示例模版为type="tapPanel"|
-|[tapSetting](#tapSetting)|Array[Object]|面板配置|
+|[tapSetting](#tapsetting)|Array[Object]|面板配置|
 
 ### <span id="pathParams">pathParams</span>
 | 参数 | 类型 | 说明 |
@@ -38,7 +38,7 @@ mapDialogModule模块
 |rowSpan|string|表格tr的属性|
 |colSpan|string|表格td属性|
 |name|string|中文名值，固定值|
-|key|string|[dataSource](#dataSource)中的key所对应的值，动态变量|
+|key|string|[dataSource](#datasource)中的key所对应的值，动态变量|
 |template|string|模版字符串`${name}${val}`，`${name}`对应取前面name的值，`${val}`为key转换后的值，可以添加其他任意字符串，|
 |style|Object|jsx的样式|
 

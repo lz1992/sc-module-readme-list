@@ -6,13 +6,13 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |dataSourcePath|string|数据源|
-|[pathParams](#pathParams)|Object|数据源参数|
+|[pathParams](#pathparams)|Object|数据源参数|
 |width|number|弹框宽度|
 |height|number|弹框高度|
 |type|string|报图类型存在5种,每种对应一个模版的配置文件，当前示例模版为type="chartInfo"|
-|[titleSetting](#titleSetting)|Object|报图标题配置|
-|[chartSetting](#chartSetting)|Object|报图配置|
-|[infoSetting](#infoSetting)|Array[]|底部文字配置|
+|[titleSetting](#titlesetting)|Object|报图标题配置|
+|[chartSetting](#chartsetting)|Object|报图配置|
+|[infoSetting](#infosetting)|Array[]|底部文字配置|
 
 ### <span id="pathParams">pathParams</span>
 | 参数 | 类型 | 说明 |
@@ -46,8 +46,8 @@ mapDialogModule模块
 |fixed|string|数值保留位数|
 |xFormat|string|x轴日期的格式化|
 |toolTipFormat|string|悬浮宽的格式化|
-|[ySetting](#ySetting)|Array[Object]|y轴值的配置，支持多个|
-|[xSetting](#xSetting)|Object|x轴值的配置|
+|[ySetting](#ysetting)|Array[Object]|y轴值的配置，支持多个|
+|[xSetting](#xsetting)|Object|x轴值的配置|
 
 #### <span id="ySetting">ySetting</span>
 | 参数 | 类型 | 说明 |
