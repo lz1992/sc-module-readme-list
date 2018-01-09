@@ -19,7 +19,7 @@ mapDialogModule模块
 ### <span id="tapSetting">tapSetting</span>
 | 参数 | 类型 | 说明 |
 |---|---|---|
-|<span id="dataSource">dataSource</span>|string|数据源,其值有2个分支，<br/>1、openOptions:<br/>表示初始化弹框的参数，template中的模版字符串key会从数据源配置中获取，<br/>例：@{stnm}的值为openOptions.pointData[stnm]<br/>serverData:<br/>表示dataSourcePath接口返回的数据集，返回结果直接挂在serverData下（）。|
+|<a name="dataSource">dataSource</a>|string|数据源,其值有2个分支，<br/>1、openOptions:<br/>表示初始化弹框的参数，template中的模版字符串key会从数据源配置中获取，<br/>例：@{stnm}的值为openOptions.pointData[stnm]<br/>serverData:<br/>表示dataSourcePath接口返回的数据集，返回结果直接挂在serverData下（）。|
 |title|string|标题|
 |type|string|类型，目前仅支持表格类型布局，后续扩展报图效果|
 |fontsize|string|字体大小|
@@ -38,7 +38,7 @@ mapDialogModule模块
 |rowSpan|string|表格tr的属性|
 |colSpan|string|表格td属性|
 |name|string|中文名值，固定值|
-|key|string|[dataSource](#datasource)中的key所对应的值，动态变量|
+|key|string|<a href="#dataSource">dataSource</a>中的key所对应的值，动态变量|
 |template|string|模版字符串`${name}${val}`，`${name}`对应取前面name的值，`${val}`为key转换后的值，可以添加其他任意字符串，|
 |style|Object|jsx的样式|
 

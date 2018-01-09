@@ -38,7 +38,7 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题，可不填|
-|key|string|数据源，来自于[dataSource](#datasource)，结构构成必须为xxx.xx,xxx为数组，xx为数组中对象的key值|
+|key|string|数据源，来自于<a href="#dataSource">dataSource</a>，结构构成必须为xxx.xx,xxx为数组，xx为数组中对象的key值|
 |style|object|jsx的样式对象|
 
 
@@ -52,7 +52,7 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|中文名称|
-|key|string|数据源，来自于[dataSource](#datasource)|
+|key|string|数据源，来自于<a href="#dataSource">dataSource</a>|
 |format|string|日期的格式化，若值存在表示key对应的值为日期字符串，否则为空或无该参数即可|
 
 ### 完整配置示例代码
