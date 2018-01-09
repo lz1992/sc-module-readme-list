@@ -26,7 +26,7 @@ mapDialogModule模块
 |template|string|模版字符串，通过使用@{xx}实现字符串占位符的替换，支持数据格式化`@{xxx|date(YYYY年MM月DD日HH时)}`，目前支持2种格式化分别是日期和小数保留，<br/>1、`@{xxx|date(YYYY年MM月DD日HH时)}`<br/>date就是日期格式化<br/>2、`@{xxx|toFixed(2)}`<br/>toFixed表示小数保留，(2)为保留两位小数|
 |dataSource|string|数据源,其值有2个分支，<br/>1、openOptions:<br/>表示初始化弹框的参数，template中的模版字符串key会从数据源配置中获取，<br/>例：@{stnm}的值为openOptions.pointData[stnm]<br/>serverData:<br/>表示dataSourcePath接口返回的数据集，返回结果直接挂在serverData下（）。|
 
-####titleSetting部分配置示例
+#### titleSetting部分配置示例
 ```
 "titleSetting":{
         "template":"@{stnm}水位过程线 <br /> @{btime|date(YYYY年MM月DD日HH时)} - @{etime|date(YYYY年MM月DD日HH时)}",
