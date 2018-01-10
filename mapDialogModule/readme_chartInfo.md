@@ -6,21 +6,21 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |dataSourcePath|string|数据源|
-|[pathParams](#pathparams)|Object|数据源参数|
+|<a href="#pathParams">pathParams</a>|Object|数据源参数|
 |width|number|弹框宽度|
 |height|number|弹框高度|
 |type|string|报图类型存在5种,每种对应一个模版的配置文件，当前示例模版为type="chartInfo"|
-|[titleSetting](#titlesetting)|Object|报图标题配置|
-|[chartSetting](#chartsetting)|Object|报图配置|
-|[infoSetting](#infosetting)|Array[]|底部文字配置|
+|<a href="#titleSetting">titleSetting</a>|Object|报图标题配置|
+|<a href="#chartSetting">chartSetting</a>|Object|报图配置|
+|<a href="#infoSetting">infoSetting</a>|Array[]|底部文字配置|
 
-### <span id="pathParams">pathParams</span>
+### <a name="pathParams">pathParams</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |任意字符串|string|键值对，key为数据源配置的参数key，<br/>value：<br/> 1、值不存在@符号，表示固定值会直接赋值给参数key（key=value）。<br/>2、值存在@符号，<br/>表示从openOptions.pointData对象中寻找@后面字符串对应的key的值,赋值给参数key(key=openOptions.pointData[value]|
 
 
-### <span id="titleSetting">titleSetting</span>
+### <a name="titleSetting">titleSetting</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |template|string|模版字符串，通过使用@{xx}实现字符串占位符的替换，支持数据格式化`@{xxx|date(YYYY年MM月DD日HH时)}`，目前支持2种格式化分别是日期和小数保留，<br/>1、`@{xxx|date(YYYY年MM月DD日HH时)}`<br/>date就是日期格式化<br/>2、`@{xxx|toFixed(2)}`<br/>toFixed表示小数保留，(2)为保留两位小数|
@@ -35,7 +35,7 @@ mapDialogModule模块
 ```
 
 
-### <span id="chartSetting">chartSetting</span>
+### <a name="chartSetting">chartSetting</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |dataSource|string|数据源,其值有2个分支，<br/>1、openOptions:<br/>表示初始化弹框的参数，template中的模版字符串key会从数据源配置中获取，<br/>例：@{stnm}的值为openOptions.pointData[stnm]<br/>serverData:<br/>表示dataSourcePath接口返回的数据集，返回结果直接挂在serverData下（）。|
@@ -46,10 +46,10 @@ mapDialogModule模块
 |fixed|string|数值保留位数|
 |xFormat|string|x轴日期的格式化|
 |toolTipFormat|string|悬浮宽的格式化|
-|[ySetting](#ysetting)|Array[Object]|y轴值的配置，支持多个|
-|[xSetting](#xsetting)|Object|x轴值的配置|
+|<a href="#ySetting">ySetting</a>|Array[Object]|y轴值的配置，支持多个|
+|<a href="#xSetting">xSetting</a>|Object|x轴值的配置|
 
-#### <span id="ySetting">ySetting</span>
+#### <a name="ySetting">ySetting</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|y轴的中文显示名|
@@ -58,7 +58,7 @@ mapDialogModule模块
 |valueType|string|固定值，为valueType，目前仅有该值|
 |chartType|string|报图类型，目前有3种，line（折线图）、column（柱状图）、arealine（面过程线）|
 
-#### <span id="xSetting">xSetting</span>
+#### <a name="xSetting">xSetting</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|x轴的绑定字段值，和key保持一致即可|
@@ -90,7 +90,7 @@ mapDialogModule模块
     }
 ```
 
-### <span id="infoSetting">infoSetting</span>
+### <a name="infoSetting">infoSetting</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|左侧数据源的中文字符|

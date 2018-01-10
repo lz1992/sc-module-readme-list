@@ -6,33 +6,33 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |dataSourcePath|string|数据源|
-|[pathParams](#pathparams)|Object|数据源参数|
+|<a href="#pathParams">pathParams</a>|Object|数据源参数|
 |width|number|弹框宽度|
 |type|string|报图类型存在5种,每种对应一个模版的配置文件，当前示例模版为type="tapPanel"|
-|[tapSetting](#tapsetting)|Array[Object]|面板配置|
+|<a href="#tapSetting">tapSetting</a>|Array[Object]|面板配置|
 
-### <span id="pathParams">pathParams</span>
+### <a name="pathParams">pathParams</a> 
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |任意字符串|string|键值对，key为数据源配置的参数key，<br/>value：<br/> 1、值不存在@符号，表示固定值会直接赋值给参数key（key=value）。<br/>2、值存在@符号，<br/>表示从openOptions.pointData对象中寻找@后面字符串对应的key的值,赋值给参数key(key=openOptions.pointData[value]|
 
-### <span id="tapSetting">tapSetting</span>
+### <a name="tapSetting">tapSetting</a> 
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |<a name="dataSource">dataSource</a>|string|数据源,其值有2个分支，<br/>1、openOptions:<br/>表示初始化弹框的参数，template中的模版字符串key会从数据源配置中获取，<br/>例：@{stnm}的值为openOptions.pointData[stnm]<br/>serverData:<br/>表示dataSourcePath接口返回的数据集，返回结果直接挂在serverData下（）。|
 |title|string|标题|
 |type|string|类型，目前仅支持表格类型布局，后续扩展报图效果|
 |fontsize|string|字体大小|
-|[trs](#trs)|Array[Object]|表格的行对象|
+|<a href="#trs">trs</a>|Array[Object]|表格的行对象|
 |width|string|面板宽度|
 |height|string|面板高度|
 
-#### <span id="trs">trs</span>
+#### <a name="trs">trs</a> 
 | 参数 | 类型 | 说明 |
 |---|---|---|
-|[tds](#tds)|Array[Object]|表格列对象|
+|<a href="#tds">tds</a>|Array[Object]|表格列对象|
 
-##### <span id="tds">tds</span>
+##### <a name="tds">tds</a> 
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |rowSpan|string|表格tr的属性|

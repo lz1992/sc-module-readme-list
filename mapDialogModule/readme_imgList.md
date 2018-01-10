@@ -6,35 +6,35 @@ mapDialogModule模块
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |dataSourcePath|string|数据源|
-|[pathParams](#pathparams)|Object|数据源参数|
+|<a href="#pathParams">pathParams</a>|Object|数据源参数|
 |width|number|弹框宽度|
 |height|number|弹框高度|
 |type|string|报图类型存在5种,每种对应一个模版的配置文件，当前示例模版为type="imgList"|
-|[imgListSetting](#imglistsetting)|Object|面板配置|
+|<a href="#imgListSetting">imgListSetting</a>|Object|面板配置|
 
-### <span id="pathParams">pathParams</span>
+### <a name="pathParams">pathParams</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |任意字符串|string|键值对，key为数据源配置的参数key，<br/>value：<br/> 1、值不存在@符号，表示固定值会直接赋值给参数key（key=value）。<br/>2、值存在@符号，<br/>表示从openOptions.pointData对象中寻找@后面字符串对应的key的值,赋值给参数key(key=openOptions.pointData[value]|
 
 
-### <span id="imgListSetting">imgListSetting</span>
+### <a name="imgListSetting">imgListSetting</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |<a name="dataSource">dataSource</a>|string|数据源,其值有2个分支，<br/>1、openOptions:<br/>表示初始化弹框的参数，template中的模版字符串key会从数据源配置中获取，<br/>例：@{stnm}的值为openOptions.pointData[stnm]<br/>serverData:<br/>表示dataSourcePath接口返回的数据集，返回结果直接挂在serverData下（）。**数据源结果必须为数组**|
 |timeStatus|boolean|是否显隐日期搜索框，无该参数表示隐藏日期搜索框|
-|[time](#time)|object|时间轴配置|
-|[img](#img)|object|图片容器配置|
-|[info](#info)|object|详情信息配置|
+|<a href="#time">time</a>|object|时间轴配置|
+|<a href="#img">img</a>|object|图片容器配置|
+|<a href="#info">info</a>|object|详情信息配置|
 
-#### <span id="img">img</span>
+#### <a name="img">img</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题，可不填|
 |key|string|数据源，来自于<a href="#dataSource">dataSource</a>|
 |style|object|jsx的样式对象|
 
-#### <span id="time">time</span>
+#### <a name="time">time</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |title|string|标题，可不填|
@@ -42,13 +42,13 @@ mapDialogModule模块
 |style|object|jsx的样式对象|
 
 
-#### <span id="info">info</span>
+#### <a name="info">info</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
-|[list_setting](#list_setting)|Array[Object]|行配置|
+|<a href="#list_setting">list_setting</a>|Array[Object]|行配置|
 |style|object|jsx的样式对象|
 
-#### <span id="list_setting">list_setting</span>
+#### <a name="list_setting">list_setting</a>
 | 参数 | 类型 | 说明 |
 |---|---|---|
 |name|string|中文名称|
